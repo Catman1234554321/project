@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <h1>Contact Us</h1>
+
+    <hr>
+    <nav>
+        <button onclick="document.location='index.html'" class="button">Home</button>
+        <button onclick="document.location='montgomery.html'" class="button">Montgomery</button>
+        <button onclick="document.location='birmingham.html'" class="button">Birmingham</button>
+        <button onclick="document.location='huntsville.html'" class="button">Huntsville</button>
+    </nav>
+    <hr>
+
+    <p>Fill out the form below with any questions you may have.</p>
+
+    <form>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="Dave" required><br><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" placeholder="Williams" required><br><br>
+
+        <label for="userEmail">Email:</label><br>
+        <input type="email" id="userEmail" name="userEmail" placeholder="Enter Email Address" required><br><br>
+
+        <label for="confirmEmail">Confirm Email:</label><br>
+        <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email Address" onblur="emailValidation()" required><br><br>
+
+        <label for="questions">Questions:</label><br>
+        <textarea name="questions" id="questions" placeholder="Enter Questions"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>

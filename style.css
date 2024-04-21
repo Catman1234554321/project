@@ -1,0 +1,96 @@
+:root {
+    --color1: #D4E4F7;
+    --color2: #236AB9;
+    --color3: #FC7307;
+    --color4: #B85B14;
+    --color5: #341C09;
+}
+
+/* IMAGE STYLING */
+#img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 300px;
+}
+
+#sideImage {
+    position: relative;
+    left: 30px;
+    width: 300px;
+    height: 200px;
+}
+
+#absolute {
+    position: absolute;
+    top: 85px;
+    left: 300px;
+    font-size: large;
+    border: 3px solid white;
+}
+
+#center {
+    text-align: center;
+}
+
+/* ELEMENT STYLING */
+body {
+    background-color: var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, footer {
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+}
+
+/* NAV BUTTONS */
+.button {
+    border-radius: 8px; 
+}
+
+.button:hover {
+    background-color: grey;
+    color: white;
+  }
+
+.clear {
+    clear: right;
+}
+
+/* ASIDE STYLING */
+aside {
+    width: 30%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+  
+aside > p {
+    margin: 0.5rem;
+}
+
+/* TABLE STYLING */
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: 1px solid darkgray;
+text-align: center;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
